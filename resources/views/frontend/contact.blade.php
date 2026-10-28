@@ -8,6 +8,8 @@
         $title = strtolower((string) $name);
 
         return match (true) {
+            str_contains($title, 'president') => 'fa-user-tie',
+            str_contains($title, 'admission'), str_contains($title, 'scholarship'), str_contains($title, 'registration') => 'fa-file-signature',
             str_contains($title, 'library') => 'fa-book-open',
             str_contains($title, 'tclass'), str_contains($title, 'training') => 'fa-chalkboard-teacher',
             str_contains($title, 'charter'), str_contains($title, 'office') => 'fa-landmark',
@@ -136,14 +138,18 @@
         <div class="row">
 
             @foreach ($data['depContact'] as $item)
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="contact_department_box text-center mb_30">
-                        <div class="icon">
-                            <img src="{{ @globalAsset(@$item->upload->path, '340X340.webp') }}" alt="Image">
+                <div class="col-xl-3 col-lg-6 col-md-6 d-flex">
+                    <div class="contact_department_box mb_30">
+                        <div class="icon" aria-hidden="true">
+                            <i class="fas {{ $placeIcon(@$item->defaultTranslate->name) }}"></i>
                         </div>
                         <h3>{{ @$item->defaultTranslate->name }}</h3>
-                        <p>{{ @$item->defaultTranslate->phone }} <br>
-                            {{ @$item->defaultTranslate->email }}</p>
+                        @if (filled(@$item->defaultTranslate->phone))
+                            <p>{{ @$item->defaultTranslate->phone }}</p>
+                        @endif
+                        @if (filled(@$item->defaultTranslate->email))
+                            <a href="mailto:{{ @$item->defaultTranslate->email }}">{{ @$item->defaultTranslate->email }}</a>
+                        @endif
                     </div>
                 </div>
             @endforeach
