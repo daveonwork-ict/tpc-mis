@@ -3,6 +3,20 @@
     {{ ___('frontend.contact_us') }}
 @endsection
 
+@php
+    $placeIcon = function ($name) {
+        $title = strtolower((string) $name);
+
+        return match (true) {
+            str_contains($title, 'library') => 'fa-book-open',
+            str_contains($title, 'tclass'), str_contains($title, 'training') => 'fa-chalkboard-teacher',
+            str_contains($title, 'charter'), str_contains($title, 'office') => 'fa-landmark',
+            str_contains($title, 'campus') => 'fa-map-marker-alt',
+            default => 'fa-building',
+        };
+    };
+@endphp
+
 @section('main')
 
 
@@ -40,8 +54,8 @@
 
                     @foreach ($data['contactInfo'] as $item)
                         <div class="find_content_widget d-flex flex-column align-items-center">
-                            <div class="icon">
-                                <img src="{{ @globalAsset(@$item->upload->path,'65X90.webp') }}" alt="Icon">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fas {{ $placeIcon(@$item->defaultTranslate->name) }}"></i>
                             </div>
                             <h3>{{ @$item->defaultTranslate->name }}</h3>
                             <p>{{ @$item->defaultTranslate->address }}</p>

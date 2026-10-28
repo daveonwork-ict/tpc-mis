@@ -910,6 +910,52 @@ select.tpc-apply__input { appearance: auto; padding-right: 10px; }
 .tpc-apply__linkbtn { background: none; border: 0; color: var(--tpc-muted); font-size: 14px; font-weight: 600; cursor: pointer; }
 .tpc-apply__linkbtn:hover { color: var(--tpc-navy); }
 
+.find_content_widget_wrapper { padding-bottom: 64px; }
+.find_content_widget_wrapper .find_content_widget {
+    background: #fff;
+    max-width: none;
+    padding: 36px 24px 28px;
+    border-radius: var(--tpc-radius);
+    box-shadow: var(--tpc-shadow);
+}
+.find_content_widget_wrapper .find_content_widget::before {
+    border: 1.5px dashed var(--tpc-blue);
+    border-radius: 12px;
+}
+.find_content_widget_wrapper .find_content_widget .icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 6px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tpc-blue-soft);
+    color: var(--tpc-navy);
+    font-size: 26px;
+}
+.find_content_widget_wrapper .find_content_widget .icon::before { display: none; }
+.find_content_widget_wrapper .find_content_widget h3 {
+    margin: 16px 0 8px;
+    color: var(--tpc-navy);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.35;
+}
+.find_content_widget_wrapper .find_content_widget p {
+    color: var(--tpc-text);
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+.find_content_widget_wrapper .find_content_widget:hover {
+    border-color: transparent;
+    box-shadow: var(--tpc-shadow-lg);
+}
+.find_content_widget_wrapper .find_content_widget:hover .icon {
+    background: var(--tpc-navy);
+    color: var(--tpc-gold);
+}
+
 .tpc-apply__status-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
 .tpc-apply__pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 800; white-space: nowrap; }
 .tpc-apply__pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
