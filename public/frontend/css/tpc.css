@@ -764,18 +764,17 @@ footer.home_three_footer .footer_logo .tpc-wordmark small { display: none; }
 footer.home_three_footer .copyright_area { background: #001A2F; }
 .tpc-legalbar {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px 28px;
-    padding: 18px 0;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 0 22px;
+    text-align: center;
 }
-.tpc-legalbar p { font-size: 13.5px; color: rgba(255, 255, 255, .58); margin: 0; text-transform: none; }
-.tpc-legalbar ul { display: flex; flex-wrap: wrap; gap: 6px 20px; list-style: none; padding: 0; margin: 0; }
+.tpc-legalbar p { font-size: 13.5px; color: rgba(255, 255, 255, .58); margin: 0; text-transform: none; text-align: center; }
+.tpc-legalbar ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; list-style: none; padding: 0; margin: 0; }
 .tpc-legalbar li a { font-size: 13.5px; color: rgba(255, 255, 255, .72); }
 .tpc-legalbar li a:hover { color: var(--tpc-gold); }
-@media (min-width: 768px) { .tpc-legalbar { padding-right: 64px; } }
-@media (max-width: 767.98px) { .tpc-legalbar { justify-content: center; text-align: center; padding-bottom: 72px; } .tpc-legalbar ul { justify-content: center; } }
 
 /* Policy and information pages */
 .tpc-doc { padding: 80px 0 100px; }
