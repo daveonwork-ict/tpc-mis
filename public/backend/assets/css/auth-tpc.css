@@ -1,0 +1,231 @@
+/* Tarlac Provincial College — sign-in screens */
+
+body.tpc-auth {
+    background: #E8F1F8;
+    font-family: "Manrope", sans-serif;
+}
+
+body.tpc-auth .auth-page {
+    min-height: 100vh;
+    height: auto;
+    align-items: center;
+    padding: 32px 16px;
+    overflow: auto;
+}
+
+body.tpc-auth .auth-container {
+    width: 980px;
+    max-width: 100%;
+}
+
+.tpc-auth-card {
+    display: flex;
+    min-height: 600px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 48px rgba(0, 42, 74, .16);
+}
+
+.tpc-auth-aside {
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 52px 40px;
+    color: #fff;
+    background:
+        radial-gradient(420px 220px at 110% -10%, rgba(232, 168, 24, .22), transparent 60%),
+        linear-gradient(168deg, #003A63 0%, #002A4A 72%);
+}
+
+.tpc-auth-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 36px;
+}
+
+.tpc-auth-seal {
+    height: 72px;
+    width: 72px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.tpc-auth-kicker {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #E8A818;
+}
+
+.tpc-auth-aside h2 {
+    margin: 0;
+    max-width: 280px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+    color: #fff;
+}
+
+.tpc-auth-province {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .78);
+}
+
+.tpc-auth-note {
+    max-width: 280px;
+    margin: 22px 0 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .74);
+}
+
+.tpc-auth-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tpc-auth-back:hover { color: #E8A818; }
+
+body.tpc-auth .form-wrapper {
+    flex: 1;
+    margin: 0;
+    padding: 52px 48px !important;
+    background: #fff !important;
+}
+
+body.tpc-auth .auth-container .form-wrapper .form-container,
+body.tpc-auth .auth-container .form-wrapper .auth-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+body.tpc-auth .form-heading { margin-bottom: 28px !important; }
+
+body.tpc-auth .auth-container .form-wrapper .form-heading .title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #0F2233;
+}
+
+body.tpc-auth .auth-container .form-wrapper .form-heading .subtitle {
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6B7A8F;
+}
+
+body.tpc-auth .auth-container .form-wrapper .auth-form label {
+    font-weight: 700;
+    color: #0F2233;
+}
+
+body.tpc-auth .auth-container .form-wrapper .auth-form input[type="text"],
+body.tpc-auth .auth-container .form-wrapper .auth-form input[type="password"],
+body.tpc-auth .auth-container .form-wrapper .auth-form input[type="email"] {
+    height: 52px;
+    border: 1px solid #E3E8EF;
+    border-radius: 8px;
+    background: #F4F7FA;
+    color: #0F2233;
+}
+
+body.tpc-auth .auth-container .form-wrapper .auth-form input:focus,
+body.tpc-auth .auth-container .form-wrapper .auth-form input:focus-visible {
+    background: #fff;
+    border-color: #003A63 !important;
+    box-shadow: 0 0 0 3px rgba(0, 58, 99, .14) !important;
+    outline: none;
+}
+
+body.tpc-auth .form-check-input {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    border-color: #C5D0DC;
+    accent-color: #003A63;
+}
+
+body.tpc-auth .form-check-input:checked {
+    background-color: #003A63;
+    border-color: #003A63;
+}
+
+body.tpc-auth .fogotPassword {
+    font-weight: 700;
+    color: #005088;
+}
+
+body.tpc-auth .fogotPassword:hover { color: #003A63; }
+
+body.tpc-auth .auth-container .form-wrapper .auth-form .submit-btn {
+    height: 52px;
+    border-radius: 8px;
+    background: #003A63;
+    border-bottom: 0;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .02em;
+    transition: background .2s ease;
+}
+
+body.tpc-auth .auth-container .form-wrapper .auth-form .submit-btn:hover {
+    background: #005088;
+    color: #fff;
+}
+
+.tpc-auth-portals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    width: 100%;
+    margin-top: 6px;
+    padding-top: 18px;
+    border-top: 1px solid #E3E8EF;
+    font-size: 14px;
+}
+
+.tpc-auth-portals span {
+    color: #6B7A8F;
+    font-weight: 600;
+}
+
+.tpc-auth-portals a {
+    font-weight: 800;
+    color: #005088;
+}
+
+.tpc-auth-portals a:hover { color: #003A63; }
+
+@media (max-width: 860px) {
+    .tpc-auth-card { flex-direction: column; min-height: 0; }
+    .tpc-auth-aside { flex: none; padding: 28px 24px 24px; }
+    .tpc-auth-brand { margin-bottom: 18px; }
+    .tpc-auth-seal { height: 56px; width: 56px; }
+    .tpc-auth-aside h2 { font-size: 24px; }
+    .tpc-auth-note, .tpc-auth-back { display: none; }
+    body.tpc-auth .form-wrapper { padding: 32px 24px !important; }
+}
+
+@media (max-width: 420px) {
+    body.tpc-auth .auth-page { padding: 0; }
+    .tpc-auth-card { border-radius: 0; min-height: 100vh; }
+}

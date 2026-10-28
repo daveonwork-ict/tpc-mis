@@ -1,0 +1,20 @@
+{
+    "student_list": "student_list",
+    "select_class": "select_class",
+    "select_section": "select_section",
+    "enter_keyword": "enter_keyword",
+    "admission_no": "admission_no",
+    "roll_no": "roll_no",
+    "Department": "Department",
+    "student_name": "student_name",
+    "guardian_name": "guardian_name",
+    "date_of_birth": "date_of_birth",
+    "mobile_number": "mobile_number",
+    "student_category": "student_category",
+    "promote_students": "promote_students",
+    "disabled_students": "disabled_students",
+    "guardian": "guardian",
+    "select_student": "Select Student",
+    "Search by name, email, phone, subdomain": "Search By Name, Email, Phone, Subdomain",
+    "student_info": "Student Info"
+}

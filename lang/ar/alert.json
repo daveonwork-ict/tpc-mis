@@ -1,0 +1,17 @@
+{
+    "language_terms_updated_successfully": "تم تحديث المصطلحات بنجاح",
+    "updated_successfully": "تم التحديث بنجاح",
+    "deleted_successfully": "تم الإلغاء بنجاح",
+    "deleted": "تم الإلغاء",
+    "OK": "تم",
+    "successfully updated": "تم التحديث بنجاح",
+    "something_went_wrong_please_try_again": "حدث خطأ، حاول مرة أخرى",
+    "general_settings_updated_successfully": "تم تحديث الإعدادات العامة بنجاح",
+    "created_successfully": "تمت الإضافة",
+    "there_is_already_a_class_for_this_session": "يوجد حصة بالفعل لهذه الجلسة",
+    "role_updated_successfully": "تم تحديث الدور بنجاح",
+    "user_created_successfully": "تم إنشاء المستخدم بنجاح",
+    "user_updated_successfully": "تم تحديث المستخدم بنجاح",
+    "no assigned data found.": "لم يتم العثور على أي بيانات مخصصة.",
+    "checked_section_needs_the_same_subject": "Checked Section Needs The Same Subject"
+}

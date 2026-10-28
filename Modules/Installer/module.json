@@ -1,0 +1,16 @@
+{
+    "name": "Installer",
+    "alias": "installer",
+    "description": "This is Installer module for setting up and configuring the system. Handles initial setup, database migrations, and system configuration. Thanks for using.",
+    "keywords": [],
+    "version": "1.0.0",
+    "thumbnail": "installer.png",
+    "published_date": "January 14th, 2025",
+    "verified": true,
+    "purchased": true,
+    "priority": 0,
+    "providers": [
+        "Modules\\Installer\\Providers\\InstallerServiceProvider"
+    ],
+    "files": []
+}

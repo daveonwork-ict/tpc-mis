@@ -1,0 +1,18 @@
+{
+    "short_view": "عرض مختصر",
+    "details_view": "عرض مفصل",
+    "roll_number": "الرقم المتسلسل",
+    "Day\/Time": "اليوم\/الوقت",
+    "room_no": "رقم الغرفة",
+    "select_type": "Select Type",
+    "grade_sheet": "Grade Sheet",
+    "subject_code": "Subject Code",
+    "subject_name": "Subject Name",
+    "mark_grade": "Mark Grade",
+    "exam_name": "Exam Name",
+    "Result": "Result",
+    "GPA": "GPA",
+    "total_mark": "Total Mark",
+    "avg_marks": "Avg Marks",
+    "avg_grade": "Avg Grade"
+}

@@ -1,0 +1,20 @@
+{
+    "Discount Setup": "Discount Setup",
+    "description": "Description",
+    "Special Discount": "Special Discount",
+    "Discount Report": "Discount Report",
+    "fees_list": "Fees List",
+    "type": "Type",
+    "due_date": "Due Date",
+    "amount": "Amount",
+    "Fine": "Fine",
+    "Sub total": "Sub Total",
+    "percentage": "Percentage",
+    "fine_amount": "Fine Amount",
+    "discount": "Discount",
+    "payable": "Payable",
+    "payment_info": "Payment Info",
+    "Action": "Action",
+    "Unpaid": "Unpaid",
+    "Pay": "Pay"
+}

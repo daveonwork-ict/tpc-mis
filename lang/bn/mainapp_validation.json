@@ -1,0 +1,9 @@
+{
+    "The country field is required.": "The Country Field Is Required.",
+    "The selected country is invalid.": "The Selected Country Is Invalid.",
+    "The city name is required.": "The City Name Is Required.",
+    "The city name must be a string.": "The City Name Must Be A String.",
+    "The city name may not be greater than 255 characters.": "The City Name May Not Be Greater Than 255 Characters.",
+    "The status field is required.": "The Status Field Is Required.",
+    "The selected status is invalid.": "The Selected Status Is Invalid."
+}

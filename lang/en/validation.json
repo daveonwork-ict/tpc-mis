@@ -1,0 +1,18 @@
+{
+    "message_is_required": "Message Is Required",
+    "message_must_be_less_than_600_characters": "Message Must Be Less Than 600 Characters",
+    "The Students Username is required": "The Students Username Is Required",
+    "The Students Username has already been taken": "The Students Username Has Already Been Taken",
+    "Staff Id is required": "Staff Id Is Required",
+    "Staff Id must be unique": "Staff Id Must Be Unique",
+    "Email is required": "Email Is Required",
+    "Email has already been taken": "Email Has Already Been Taken",
+    "Phone is required": "Phone Is Required",
+    "Phone has already been taken": "Phone Has Already Been Taken",
+    "Please select a marksheet template": "Please Select A Marksheet Template",
+    "Please select a class": "Please Select A Class",
+    "Please select a section": "Please Select A Section",
+    "Please select an exam type": "Please Select An Exam Type",
+    "Please select a student": "Please Select A Student",
+    "Please select a routine template": "Please Select A Routine Template"
+}

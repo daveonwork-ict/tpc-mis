@@ -1,0 +1,200 @@
+[
+    {
+        "name": "LiveChat",
+        "alias": "livechat",
+        "default": true,
+        "description": "The LiveChat module provides real-time chat functionality for seamless communication between users. Engage with your website visitors or enable user-to-user chat within your application. Powered by Laravel, this module offers a reliable and secure chat solution with WebSocket technology.",
+        "keywords": [
+            "chat",
+            "messaging",
+            "real-time"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "LiveChat.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": true,
+        "purchased": true,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20LiveChat%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "PushNotification",
+        "alias": "pushnotification",
+        "default": true,
+        "description": "This is Push Notification module for sending real-time notifications to users. Send alerts, updates, and important messages directly to user devices. Thanks for using.",
+        "keywords": [
+            "notification",
+            "push",
+            "alerts"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "PushNotification.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20PushNotification%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "Accounts",
+        "alias": "accounts",
+        "default": false,
+        "description": "This is Accounts module for managing financial accounts, transactions, and accounting operations. Track income, expenses, and generate financial reports. Thanks for using.",
+        "keywords": [
+            "accounting",
+            "finance",
+            "transactions"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "Accounts.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20Accounts%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "ActivityLog",
+        "alias": "activitylog",
+        "default": false,
+        "description": "This is Activity Log module for tracking and monitoring user activities in the system. View detailed logs of all user actions, changes, and system events. Thanks for using.",
+        "keywords": [
+            "log",
+            "activity",
+            "tracking"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "ActivityLog.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20ActivityLog%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "MultiBranch",
+        "alias": "multibranch",
+        "default": false,
+        "description": "This is Multi Branch module for managing multiple school branches from a single system. Handle different locations, transfer students, and centralize administration. Thanks for using.",
+        "keywords": [
+            "branch",
+            "multi-location",
+            "management"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "MultiBranch.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20MultiBranch%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "StudyMaterial",
+        "alias": "studymaterial",
+        "default": false,
+        "description": "Study Material module for tracking and monitoring exam activities in the system. View detailed logs of all user actions, changes, and system events. Thanks for using.",
+        "keywords": [
+            "study",
+            "material",
+            "resources"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "StudyMaterial.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20StudyMaterial%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "VehicleTracker",
+        "alias": "vehicletracker",
+        "default": false,
+        "description": "This is Vehicle Tracker module for monitoring school transportation. Track vehicle locations, routes, and ensure student safety during transit. Thanks for using.",
+        "keywords": [
+            "vehicle",
+            "tracking",
+            "transport"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "VehicleTracker.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20VehicleTracker%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "LiveTracking",
+        "alias": "livetracking",
+        "default": false,
+        "description": "This is Live Tracking module for real-time location tracking of students and vehicles. Monitor movements and ensure safety with GPS-based tracking. Thanks for using.",
+        "keywords": [
+            "tracking",
+            "gps",
+            "real-time"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "LiveTracking.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20LiveTracking%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "ReportTemplate",
+        "alias": "reporttemplate",
+        "default": false,
+        "description": "",
+        "keywords": [
+            "report",
+            "template",
+            "customization"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "ReportTemplate.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20ReportTemplate%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "BehaviourRecord",
+        "alias": "behaviourrecord",
+        "default": false,
+        "description": "",
+        "keywords": [
+            "behavior",
+            "discipline",
+            "records"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "Behaviour Record.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20BehaviourRecord%20module%20for%20Onest%20Schooled"
+    },
+    {
+        "name": "Chat",
+        "alias": "chat",
+        "default": false,
+        "description": "This is Chat module for instant messaging between teachers, students, and parents. Enable real-time communication and collaboration within the school community. Thanks for using.",
+        "keywords": [
+            "chat",
+            "messaging",
+            "communication"
+        ],
+        "version": "1.0.0",
+        "thumbnail": "Chat.jpg",
+        "published_date": "January 14th, 2025",
+        "verified": false,
+        "purchased": false,
+        "priority": 0,
+        "purchase_link": "https://api.whatsapp.com/send?phone=8801959335555&text=I%20am%20interested%20to%20purchase%20Chat%20module%20for%20Onest%20Schooled"
+    }
+]

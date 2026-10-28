@@ -1,0 +1,16 @@
+{
+    "name": "LiveChat",
+    "alias": "livechat",
+    "description": "The LiveChat module provides real-time chat functionality for seamless communication between users. Engage with your website visitors or enable user-to-user chat within your application. Powered by Laravel, this module offers a reliable and secure chat solution with WebSocket technology.",
+    "keywords": [],
+    "version": "1.0.0",
+    "thumbnail": "live_chat.png",
+    "published_date": "January 14th, 2025",
+    "verified": true,
+    "purchased": true,
+    "priority": 0,
+    "providers": [
+        "Modules\\LiveChat\\Providers\\LiveChatServiceProvider"
+    ],
+    "files": []
+}

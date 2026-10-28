@@ -1,0 +1,16 @@
+{
+    "name": "PushNotification",
+    "alias": "pushnotification",
+    "description": "This is Push Notification module for sending real-time notifications to users. Send alerts, updates, and important messages directly to user devices. Thanks for using.",
+    "keywords": [],
+    "version": "1.0.0",
+    "thumbnail": "push_notification.png",
+    "published_date": "January 14th, 2025",
+    "verified": true,
+    "purchased": true,
+    "priority": 0,
+    "providers": [
+        "Modules\\PushNotification\\Providers\\PushNotificationServiceProvider"
+    ],
+    "files": []
+}

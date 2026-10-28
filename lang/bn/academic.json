@@ -1,0 +1,15 @@
+{
+    "class": "ক্লাস",
+    "section": "section",
+    "time_schedule": "time_schedule",
+    "theory": "Theory",
+    "practical": "Practical",
+    "subject": "Subject",
+    "teacher": "Teacher",
+    "code": "Code",
+    "type": "Type",
+    "date": "Date",
+    "marks": "Marks",
+    "document": "Document",
+    "submission_date": "Submission Date"
+}

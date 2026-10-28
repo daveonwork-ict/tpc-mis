@@ -1,0 +1,21 @@
+{
+    "Accounts": "الحسابات",
+    "account_head": "الحسابات الرئيسية",
+    "income": "الإيرادات",
+    "expense": "المصاريف",
+    "enter_amount": "أدخل القيمة",
+    "Enter Sibling Order": "ادخل ترتيب الأخ",
+    "type": "النوع",
+    "enter_description": "أدخل الوصف",
+    "description": "الوصف",
+    "bottom_left_text": "النص أسفل اليسار",
+    "bottom_right_text": "النص أسفل اليمين",
+    "Notice Title": "عنوان الإشعار",
+    "income_head": "رأس الإيرادات",
+    "date": "التاريخ",
+    "invoice_number": "رقم الفاتورة",
+    "amount": "القيمة",
+    "create_income": "إنشاء إيراد",
+    "enter_invoice_number": "أدخل رقم الفاتورة",
+    "expense_head": "رأس المصاريف"
+}

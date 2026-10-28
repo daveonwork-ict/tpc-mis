@@ -1,0 +1,23 @@
+{
+    "online_examination": "online_examination",
+    "question_group": "question_group",
+    "question_bank": "question_bank",
+    "online_exam": "online_exam",
+    "Single Choice": "Single Choice",
+    "Multiple Choice": "Multiple Choice",
+    "True \/ False": "True \/ False",
+    "Descriptive": "Descriptive",
+    "Not Submitted Yest": "Not Submitted Yest",
+    "Submitted": "Submitted",
+    "homeworks": "Homeworks",
+    "gmeet": "Gmeet",
+    "Subject Name": "Subject Name",
+    "Subject Code": "Subject Code",
+    "Last": "Last",
+    "Time": "Time",
+    "1": "1",
+    "True": "True",
+    "2": "2",
+    "False": "False",
+    "Evaluated Marks": "Evaluated Marks"
+}

@@ -1,0 +1,23 @@
+{
+    "Schools": "Schools",
+    "School List": "School List",
+    "Sub domain": "Sub Domain",
+    "Package": "Package",
+    "Select Country": "Select Country",
+    "Select city": "Select City",
+    "Select package": "Select Package",
+    "School": "School",
+    "Country": "Country",
+    "City": "City",
+    "Select City": "Select City",
+    "Sub domain key": "Sub Domain Key",
+    "Enter sub domain key (0-9a-z)": "Enter Sub Domain Key (0-9a-z)",
+    "School Superadmin Email Will Be As your Email Input": "School Superadmin Email Will Be As Your Email Input",
+    "Default Password Will Be : 123456": "Default Password Will Be : 123456",
+    "schools": "Schools",
+    "add": "Add",
+    "Student limit": "Student Limit",
+    "Enter student limit": "Enter Student Limit",
+    "Staff limit": "Staff Limit",
+    "Enter staff limit": "Enter Staff Limit"
+}
