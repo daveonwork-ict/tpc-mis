@@ -24,7 +24,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h4 class="mb-0">{{ $data['title'] }}</h4>
-                    @if (hasPermission('gallery_category_create'))
+                    @if (hasPermission('page_sections_update'))
                         <a href="{{ route('gallery-category.create') }}" class="btn btn-lg ot-btn-primary">
                             <span><i class="fa-solid fa-plus"></i> </span>
                             <span class="">{{ ___('common.add') }}</span>
@@ -39,7 +39,7 @@
                                     <th class="serial">{{ ___('common.sr_no') }}</th>
                                     <th class="purchase">{{ ___('common.name') }}</th>
                                     <th class="purchase">{{ ___('common.status') }}</th>
-                                    @if (hasPermission('gallery_category_update') || hasPermission('gallery_category_delete'))
+                                    @if (hasPermission('page_sections_update'))
                                         <th class="action">{{ ___('common.action') }}</th>
                                     @endif
                                 </tr>
@@ -56,7 +56,7 @@
                                             <span class="badge-basic-danger-text">{{ ___('common.inactive') }}</span>
                                         @endif
                                     </td>
-                                    @if (hasPermission('gallery_category_update') || hasPermission('gallery_category_delete'))
+                                    @if (hasPermission('page_sections_update'))
                                         <td class="action">
                                             <div class="dropdown dropdown-action">
                                                 <button type="button" class="btn-dropdown" data-bs-toggle="dropdown"
@@ -64,7 +64,7 @@
                                                     <i class="fa-solid fa-ellipsis"></i>
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-end ">
-                                                    @if (hasPermission('gallery_category_update'))
+                                                    @if (hasPermission('page_sections_update'))
                                                         <li>
                                                             <a class="dropdown-item"
                                                                 href="{{ route('gallery-category.edit', $row->id) }}"><span
@@ -73,7 +73,7 @@
                                                                 {{ ___('common.edit') }}</a>
                                                         </li>
                                                     @endif
-                                                    @if (hasPermission('gallery_category_update') && app_translate())
+                                                    @if (hasPermission('page_sections_update') && app_translate())
                                                         <li>
                                                             <a class="dropdown-item"
                                                                 href="{{ route('gallery-category.translate', $row->id) }}"><span
@@ -82,7 +82,7 @@
                                                                 {{ ___('common.translate') }}</a>
                                                         </li>
                                                     @endif
-                                                    @if (hasPermission('gallery_category_delete'))
+                                                    @if (hasPermission('page_sections_update'))
                                                         <li>
                                                             <a class="dropdown-item" href="javascript:void(0);"
                                                                 onclick="delete_row('gallery-category/delete', {{ $row->id }})">

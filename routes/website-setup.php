@@ -135,23 +135,23 @@ Route::middleware(saasMiddleware())->group(function () {
             Route::group(['middleware' => ['auth.routes']], function () {
 
                 Route::controller(GalleryCategoryController::class)->prefix('gallery-category')->group(function () {
-                    Route::get('/',                         'index')->name('gallery-category.index')->middleware('PermissionCheck:gallery_category_read');
-                    Route::get('/create',                   'create')->name('gallery-category.create')->middleware('PermissionCheck:gallery_category_create');
-                    Route::post('/store',                   'store')->name('gallery-category.store')->middleware('PermissionCheck:gallery_category_create', 'DemoCheck');
-                    Route::get('/edit/{id}',                'edit')->name('gallery-category.edit')->middleware('PermissionCheck:gallery_category_update');
-                    Route::get('/translate/{id}',                'translate')->name('gallery-category.translate')->middleware('PermissionCheck:gallery_category_update');
-                    Route::post('/translateUpdate/{id}',                'translateUpdate')->name('gallery-category.translateUpdate')->middleware('PermissionCheck:gallery_category_update');
-                    Route::put('/update/{id}',              'update')->name('gallery-category.update')->middleware('PermissionCheck:gallery_category_update', 'DemoCheck');
-                    Route::delete('/delete/{id}',           'delete')->name('gallery-category.delete')->middleware('PermissionCheck:gallery_category_delete', 'DemoCheck');
+                    Route::get('/',                         'index')->name('gallery-category.index')->middleware('PermissionCheck:page_sections_read');
+                    Route::get('/create',                   'create')->name('gallery-category.create')->middleware('PermissionCheck:page_sections_update');
+                    Route::post('/store',                   'store')->name('gallery-category.store')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
+                    Route::get('/edit/{id}',                'edit')->name('gallery-category.edit')->middleware('PermissionCheck:page_sections_update');
+                    Route::get('/translate/{id}',                'translate')->name('gallery-category.translate')->middleware('PermissionCheck:page_sections_update');
+                    Route::post('/translateUpdate/{id}',                'translateUpdate')->name('gallery-category.translateUpdate')->middleware('PermissionCheck:page_sections_update');
+                    Route::put('/update/{id}',              'update')->name('gallery-category.update')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
+                    Route::delete('/delete/{id}',           'delete')->name('gallery-category.delete')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
                 });
 
                 Route::controller(GalleryController::class)->prefix('gallery')->group(function () {
-                    Route::get('/',                         'index')->name('gallery.index')->middleware('PermissionCheck:gallery_read');
-                    Route::get('/create',                   'create')->name('gallery.create')->middleware('PermissionCheck:gallery_create');
-                    Route::post('/store',                   'store')->name('gallery.store')->middleware('PermissionCheck:gallery_create', 'DemoCheck');
-                    Route::get('/edit/{id}',                'edit')->name('gallery.edit')->middleware('PermissionCheck:gallery_update');
-                    Route::put('/update/{id}',              'update')->name('gallery.update')->middleware('PermissionCheck:gallery_update', 'DemoCheck');
-                    Route::delete('/delete/{id}',           'delete')->name('gallery.delete')->middleware('PermissionCheck:gallery_delete', 'DemoCheck');
+                    Route::get('/',                         'index')->name('gallery.index')->middleware('PermissionCheck:page_sections_read');
+                    Route::get('/create',                   'create')->name('gallery.create')->middleware('PermissionCheck:page_sections_update');
+                    Route::post('/store',                   'store')->name('gallery.store')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
+                    Route::get('/edit/{id}',                'edit')->name('gallery.edit')->middleware('PermissionCheck:page_sections_update');
+                    Route::put('/update/{id}',              'update')->name('gallery.update')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
+                    Route::delete('/delete/{id}',           'delete')->name('gallery.delete')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
                 });
 
                 Route::controller(PagesController::class)->prefix('page')->name('page.')->group(function () {

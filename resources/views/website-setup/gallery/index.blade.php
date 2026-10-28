@@ -24,7 +24,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h4 class="mb-0">{{ $data['title'] }}</h4>
-                    @if (hasPermission('gallery_create'))
+                    @if (hasPermission('page_sections_update'))
                         <a href="{{ route('gallery.create') }}" class="btn btn-lg ot-btn-primary">
                             <span><i class="fa-solid fa-plus"></i> </span>
                             <span class="">{{ ___('common.add') }}</span>
@@ -40,7 +40,7 @@
                                     <th class="purchase">{{ ___('common.category') }}</th>
                                     <th class="purchase">{{ ___('common.image') }}</th>
                                     <th class="purchase">{{ ___('common.status') }}</th>
-                                    @if (hasPermission('gallery_update') || hasPermission('gallery_delete'))
+                                    @if (hasPermission('page_sections_update'))
                                         <th class="action">{{ ___('common.action') }}</th>
                                     @endif
                                 </tr>
@@ -62,7 +62,7 @@
                                             <span class="badge-basic-danger-text">{{ ___('common.inactive') }}</span>
                                         @endif
                                     </td>
-                                    @if (hasPermission('gallery_update') || hasPermission('gallery_delete'))
+                                    @if (hasPermission('page_sections_update'))
                                         <td class="action">
                                             <div class="dropdown dropdown-action">
                                                 <button type="button" class="btn-dropdown" data-bs-toggle="dropdown"
@@ -70,7 +70,7 @@
                                                     <i class="fa-solid fa-ellipsis"></i>
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-end ">
-                                                    @if (hasPermission('gallery_update'))
+                                                    @if (hasPermission('page_sections_update'))
                                                         <li>
                                                             <a class="dropdown-item"
                                                                 href="{{ route('gallery.edit', $row->id) }}"><span
@@ -79,7 +79,7 @@
                                                                 {{ ___('common.edit') }}</a>
                                                         </li>
                                                     @endif
-                                                    @if (hasPermission('gallery_delete'))
+                                                    @if (hasPermission('page_sections_update'))
                                                         <li>
                                                             <a class="dropdown-item" href="javascript:void(0);"
                                                                 onclick="delete_row('gallery/delete', {{ $row->id }})">

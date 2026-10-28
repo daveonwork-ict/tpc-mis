@@ -329,7 +329,7 @@
                         hasPermission('event_read')) &&
                         hasFeature('website_setup'))
                     <li
-                        class="sidebar-menu-item {{ set_menu(['page-sections*', 'slider*', 'about*', 'counter*', 'contact-info*', 'department-contact*', 'admin-news*', 'event*']) }}">
+                        class="sidebar-menu-item {{ set_menu(['page-sections*', 'slider*', 'about*', 'counter*', 'contact-info*', 'department-contact*', 'admin-news*', 'event*', 'gallery-category*', 'gallery', 'gallery/*']) }}">
                         <a class="parent-item-content has-arrow">
                             <i class="las la-wrench"></i>
                             <span class="on-half-expanded">{{ ___('settings.Website_setup') }}</span>
@@ -352,6 +352,16 @@
                             @if (hasPermission('slider_read'))
                                 <li class="sidebar-menu-item {{ set_menu(['slider*']) }}">
                                     <a href="{{ route('slider.index') }}">{{ ___('settings.Slider') }}</a>
+                                </li>
+                            @endif
+                            @if (hasPermission('page_sections_read') || hasPermission('gallery_read'))
+                                <li class="sidebar-menu-item {{ set_menu(['gallery', 'gallery/*']) }}">
+                                    <a href="{{ route('gallery.index') }}">{{ ___('settings.Images') }}</a>
+                                </li>
+                            @endif
+                            @if (hasPermission('page_sections_read') || hasPermission('gallery_category_read'))
+                                <li class="sidebar-menu-item {{ set_menu(['gallery-category*']) }}">
+                                    <a href="{{ route('gallery-category.index') }}">{{ ___('settings.Gallery_category') }}</a>
                                 </li>
                             @endif
                             @if (hasPermission('about_read'))
@@ -393,32 +403,6 @@
                 <!-- Website setup end -->
 
 
-                <!-- Gallery start -->
-                @if ((hasPermission('gallery_category_read') || hasPermission('gallery_read')) && hasFeature('gallery'))
-                    <li class="sidebar-menu-item {{ set_menu(['gallery-category*', 'gallery/*']) }}">
-                        <a class="parent-item-content has-arrow">
-                            <i class="las la-images"></i>
-                            <span class="on-half-expanded">{{ ___('settings.Gallery') }}</span>
-                        </a>
-
-                        <!-- second layer child menu list start  -->
-
-                        <ul class="child-menu-list">
-                            @if (hasPermission('gallery_category_read'))
-                                <li class="sidebar-menu-item {{ set_menu(['gallery-category*']) }}">
-                                    <a
-                                        href="{{ route('gallery-category.index') }}">{{ ___('settings.Gallery_category') }}</a>
-                                </li>
-                            @endif
-                            @if (hasPermission('gallery_read'))
-                                <li class="sidebar-menu-item {{ set_menu(['gallery', 'gallery/*']) }}">
-                                    <a href="{{ route('gallery.index') }}">{{ ___('settings.Images') }}</a>
-                                </li>
-                            @endif
-                        </ul>
-                    </li>
-                @endif
-                <!-- Gallery end -->
 
                 <!-- Settings layout start -->
                 @if (
