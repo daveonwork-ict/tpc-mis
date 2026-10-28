@@ -314,7 +314,7 @@
                                     onclick="addNewDocument()">
                                     <span><i class="fa-solid fa-plus"></i> </span>
                                     {{ ___('common.add') }}</button>
-                                    <input type="hidden" name="counter" id="counter" value="{{count(@$data['user']->upload_documents)}}">
+                                    <input type="hidden" name="counter" id="counter" value="{{ count($data['user']->upload_documents ?? []) }}">
                             </div>
                         </div>
                     </div>
@@ -351,7 +351,7 @@
                                     </thead>
                                     <tbody>
 
-                                        @foreach (@$data['user']->upload_documents as $key=>$item)
+                                        @foreach ($data['user']->upload_documents ?? [] as $key=>$item)
                                         <tr id="document-file">
                                             <td>
                                                 <input type="text" name="document_names[{{$key}}]" value="{{ $item['title'] }}"
