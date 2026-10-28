@@ -155,15 +155,15 @@ Route::middleware(saasMiddleware())->group(function () {
                 });
 
                 Route::controller(PagesController::class)->prefix('page')->name('page.')->group(function () {
-                    Route::get('/',                         'index')->name('index')->middleware('PermissionCheck:page_read');
-                    Route::get('/create',                   'create')->name('create')->middleware('PermissionCheck:page_create');
-                    Route::post('/store',                   'store')->name('store')->middleware('PermissionCheck:page_create', 'DemoCheck');
-                    Route::get('/edit/{id}',                'edit')->name('edit')->middleware('PermissionCheck:page_update');
-                    Route::post('/update/{id}',              'update')->name('update')->middleware('PermissionCheck:page_update', 'DemoCheck');
-                    Route::delete('/delete/{id}',           'delete')->name('delete')->middleware('PermissionCheck:page_delete', 'DemoCheck');
+                    Route::get('/',                         'index')->name('index')->middleware('PermissionCheck:page_sections_read');
+                    Route::get('/create',                   'create')->name('create')->middleware('PermissionCheck:page_sections_update');
+                    Route::post('/store',                   'store')->name('store')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
+                    Route::get('/edit/{id}',                'edit')->name('edit')->middleware('PermissionCheck:page_sections_update');
+                    Route::post('/update/{id}',              'update')->name('update')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
+                    Route::delete('/delete/{id}',           'delete')->name('delete')->middleware('PermissionCheck:page_sections_update', 'DemoCheck');
 
-                    Route::get('/translate/{id}',                'translate')->name('translate')->middleware('PermissionCheck:page_update');
-                    Route::put('/translate/update/{id}',                'translateUpdate')->name('translate.update')->middleware('PermissionCheck:page_update');
+                    Route::get('/translate/{id}',                'translate')->name('translate')->middleware('PermissionCheck:page_sections_update');
+                    Route::put('/translate/update/{id}',                'translateUpdate')->name('translate.update')->middleware('PermissionCheck:page_sections_update');
 
                 });
 
