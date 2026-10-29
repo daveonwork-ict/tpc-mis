@@ -22,15 +22,6 @@
         };
     };
 
-    $statementIcon = function ($title) {
-        $t = strtolower($title);
-        return match (true) {
-            str_contains($t, 'mission') => 'fa-bullseye',
-            str_contains($t, 'vision') => 'fa-eye',
-            default => 'fa-landmark',
-        };
-    };
-
     $latestNews = $data['latestNews'];
     $featuredNews = $latestNews->first();
     $otherNews = $latestNews->slice(1, 3);
@@ -89,18 +80,9 @@
                 <div class="col-lg-7">
                     <div class="tpc-about__body">
                         <span class="tpc-eyebrow">{{ ___('frontend.about_the_college') }}</span>
-                        <h2 class="tpc-title">{{ @$sections['statement']->defaultTranslate->name }}</h2>
-                        <div class="tpc-statements">
-                            @foreach ($sectionData('statement') as $item)
-                                <div class="tpc-statement">
-                                    <div class="tpc-statement__icon"><i class="fas {{ $statementIcon($item['title']) }}"></i></div>
-                                    <div>
-                                        <h3>{{ $item['title'] }}</h3>
-                                        <p>{{ $item['description'] }}</p>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
+                        <h2 class="tpc-title">About Tarlac Provincial College</h2>
+                        <p class="tpc-lead">The Province of Tarlac protects and promotes the right of its people to quality education at all levels, and makes that education accessible through a system that meets local and sectoral needs.</p>
+                        <p class="tpc-lead">Education is one of the province’s five pillars of good governance, together with job generation, healthcare, agriculture and food security, and environmental protection. Under the banner “Edukasyon muna, Tao muna,” the provincial administration treats accessible, equal, and quality education as the way to prepare Tarlaqueños for work and to support the growth of the province.</p>
                         <a href="{{ route('frontend.about') }}" class="tpc-btn tpc-btn--primary">
                             {{ ___('frontend.learn_more') }} <i class="fas fa-arrow-right"></i>
                         </a>
@@ -111,8 +93,37 @@
     </section>
     <!-- ABOUT::END -->
 
-    <!-- SCHOOLS::START -->
     <section class="tpc-section tpc-section--tint">
+        <div class="container">
+            <div class="tpc-purpose">
+                <article class="tpc-purpose__vision">
+                    <span class="tpc-eyebrow">Vision</span>
+                    <p>Tarlac Provincial College is the center of educational opportunities for Tarlaqueños.</p>
+                </article>
+                <div class="tpc-purpose__grid">
+                    <article class="tpc-card tpc-purpose__card">
+                        <h2>Mission</h2>
+                        <ol>
+                            <li>Produce competent, committed, and compassionate graduates through quality, accessible, and inclusive education.</li>
+                            <li>Build pathways to translate education into meaningful employment and contribution to society.</li>
+                            <li>Partner with communities for the advancement of local development and global engagement.</li>
+                        </ol>
+                    </article>
+                    <article class="tpc-card tpc-purpose__card">
+                        <h2>Goals</h2>
+                        <ol>
+                            <li>Produce graduates with strong disciplinary foundations, employability, local-rootedness, and a sense of service, aligned with global standards.</li>
+                            <li>Provide opportunities that meet the needs of the people and respond to their changing social and economic conditions.</li>
+                            <li>Sustain the College through good governance and continuous quality assurance in academic and administrative systems.</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOLS::START -->
+    <section class="tpc-section">
         <div class="container">
             <div class="tpc-section-head">
                 <span class="tpc-eyebrow">{{ ___('frontend.academic_schools') }}</span>

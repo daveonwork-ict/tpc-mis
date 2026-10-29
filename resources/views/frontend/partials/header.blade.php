@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{global_asset('frontend')}}/css/slicknav.css">
     <link rel="stylesheet" href="{{global_asset('frontend')}}/css/style.css?v=tpc5">
     <link rel="stylesheet" href="{{global_asset('frontend')}}/css/custom.css?v=tpc5">
-    <link rel="stylesheet" href="{{global_asset('frontend')}}/css/tpc.css?v=tpc16">
+    <link rel="stylesheet" href="{{global_asset('frontend')}}/css/tpc.css?v=tpc17">
     <link rel="stylesheet" href="{{global_asset('frontend')}}/css/sweetalert2.min.css">
 
     @stack('css')
