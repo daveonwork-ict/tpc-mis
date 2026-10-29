@@ -68,27 +68,29 @@
 
     <section class="tpc-section tpc-section--tint">
         <div class="container">
-            <div class="tpc-manual">
-                <article class="tpc-manual__block">
-                    <h2>Vision</h2>
+            <div class="tpc-purpose">
+                <article class="tpc-purpose__vision">
+                    <span class="tpc-eyebrow">Vision</span>
                     <p>Tarlac Provincial College is the center of educational opportunities for Tarlaqueños.</p>
                 </article>
-                <article class="tpc-manual__block">
-                    <h2>Mission</h2>
-                    <ol>
-                        <li>Produce competent, committed, and compassionate graduates through quality, accessible, and inclusive education.</li>
-                        <li>Build pathways to translate education into meaningful employment and contribution to society.</li>
-                        <li>Partner with communities for the advancement of local development and global engagement.</li>
-                    </ol>
-                </article>
-                <article class="tpc-manual__block">
-                    <h2>Goals</h2>
-                    <ol>
-                        <li>Produce graduates with strong disciplinary foundations, employability, local-rootedness, and a sense of service, aligned with global standards.</li>
-                        <li>Provide opportunities that meet the needs of the people and respond to their changing social and economic conditions.</li>
-                        <li>Sustain the College through good governance and continuous quality assurance in academic and administrative systems.</li>
-                    </ol>
-                </article>
+                <div class="tpc-purpose__grid">
+                    <article class="tpc-card tpc-purpose__card">
+                        <h2>Mission</h2>
+                        <ol>
+                            <li>Produce competent, committed, and compassionate graduates through quality, accessible, and inclusive education.</li>
+                            <li>Build pathways to translate education into meaningful employment and contribution to society.</li>
+                            <li>Partner with communities for the advancement of local development and global engagement.</li>
+                        </ol>
+                    </article>
+                    <article class="tpc-card tpc-purpose__card">
+                        <h2>Goals</h2>
+                        <ol>
+                            <li>Produce graduates with strong disciplinary foundations, employability, local-rootedness, and a sense of service, aligned with global standards.</li>
+                            <li>Provide opportunities that meet the needs of the people and respond to their changing social and economic conditions.</li>
+                            <li>Sustain the College through good governance and continuous quality assurance in academic and administrative systems.</li>
+                        </ol>
+                    </article>
+                </div>
             </div>
             <h2 class="tpc-title tpc-title--sm">Core values</h2>
             <p class="tpc-lead">Truth. Progress. Compassion. These values shape the intellect and the character of learners and guide decisions, relationships, and the culture of the College.</p>
@@ -117,8 +119,8 @@
 
     <section class="tpc-section">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-5">
                     <span class="tpc-eyebrow">What a TPC graduate carries</span>
                     <h2 class="tpc-title tpc-title--sm">Graduate attributes</h2>
                     <ol class="tpc-manual__attrs">
@@ -129,14 +131,18 @@
                         <li><b>Collaboration.</b> Partnerships with people, communities, and organizations, locally and globally, toward shared goals.</li>
                     </ol>
                 </div>
-                <div class="col-lg-6">
-                    <span class="tpc-eyebrow">College logo</span>
-                    <h2 class="tpc-title tpc-title--sm">Collaboration, growth, and service</h2>
-                    <p class="tpc-lead">The logo stands for collaboration, growth, and service in accessible, quality higher education. Its circle means wholeness, continuity, and a lasting commitment to lifelong learning and community development. The shield at the center means protection, tradition, excellence, and institutional strength.</p>
-                    <p class="tpc-lead mb-0">The double blue ring means unity and permanence. “Tarlac Provincial College” and “Provincial Government of Tarlac” are written on the upper and lower arcs, tying the College to the provincial government.</p>
+                <div class="col-lg-7">
+                    <article class="tpc-logo-panel">
+                        <img class="tpc-college-logo" src="{{ @globalAsset(setting('light_logo'), 'light.png') }}" alt="Seal of Tarlac Provincial College">
+                        <div class="tpc-logo-panel__copy">
+                            <span class="tpc-eyebrow">College logo</span>
+                            <h2 class="tpc-title tpc-title--sm">Collaboration, growth, and service</h2>
+                            <p class="tpc-lead">The logo stands for collaboration, growth, and service in accessible, quality higher education. Its circle means wholeness, continuity, and a lasting commitment to lifelong learning and community development. The shield at the center means protection, tradition, excellence, and institutional strength.</p>
+                            <p class="tpc-lead mb-0">The double blue ring means unity and permanence. “Tarlac Provincial College” and “Provincial Government of Tarlac” are written on the upper and lower arcs, tying the College to the provincial government.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <p class="tpc-manual__source">From the 2026 Tarlac Provincial College Student Manual, About the College, pages 1 to 4.</p>
         </div>
     </section>
 

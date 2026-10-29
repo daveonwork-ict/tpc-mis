@@ -424,24 +424,95 @@ a.tpc-card:hover, .tpc-card:hover {
 .tpc-statement h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
 .tpc-statement p { font-size: 15.5px; line-height: 1.7; margin: 0; color: var(--tpc-text); }
 
-.tpc-manual { display: grid; gap: 28px; margin-bottom: 48px; }
-.tpc-manual__block h2,
-.tpc-value h3 { color: var(--tpc-navy); font-weight: 800; }
-.tpc-manual__block h2 { font-size: 28px; margin-bottom: 12px; }
-.tpc-manual__block p,
-.tpc-manual__block li,
-.tpc-value p { font-size: 16px; line-height: 1.75; color: var(--tpc-text); }
-.tpc-manual__block ol,
-.tpc-manual__attrs { margin: 0; padding-left: 1.25rem; }
-.tpc-manual__block li + li,
-.tpc-manual__attrs li + li { margin-top: 10px; }
+.tpc-purpose { display: grid; gap: 20px; margin-bottom: 56px; }
+.tpc-purpose__vision {
+    padding: 32px 36px;
+    background: #fff;
+    border-left: 4px solid var(--tpc-gold);
+    border-radius: 0 var(--tpc-radius) var(--tpc-radius) 0;
+    box-shadow: var(--tpc-shadow);
+}
+.tpc-purpose__vision .tpc-eyebrow { margin-bottom: 12px; }
+.tpc-purpose__vision p {
+    margin: 0;
+    max-width: 18em;
+    font-size: 28px;
+    line-height: 1.35;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: var(--tpc-navy);
+}
+.tpc-purpose__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch; }
+.tpc-purpose__card { height: 100%; padding: 28px 28px 32px; }
+.tpc-purpose__card:hover { transform: none; }
+.tpc-purpose__card h2 { margin: 0 0 18px; font-size: 22px; font-weight: 800; color: var(--tpc-navy); }
+.tpc-purpose__card ol { list-style: none; margin: 0; padding: 0; counter-reset: tpc-purpose; }
+.tpc-purpose__card li {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 14px;
+    align-items: start;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--tpc-text);
+}
+.tpc-purpose__card li + li { margin-top: 16px; }
+.tpc-purpose__card li::before {
+    counter-increment: tpc-purpose;
+    content: counter(tpc-purpose);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tpc-blue-soft);
+    color: var(--tpc-blue);
+    font-size: 13px;
+    font-weight: 800;
+}
+@media (max-width: 767.98px) {
+    .tpc-purpose__grid { grid-template-columns: 1fr; }
+    .tpc-purpose__vision { padding: 24px 22px; }
+    .tpc-purpose__vision p { font-size: 22px; }
+}
 .tpc-value { height: 100%; padding: 28px 26px; }
-.tpc-value h3 { font-size: 20px; margin-bottom: 10px; }
-.tpc-value p { margin: 0; }
-.tpc-manual__attrs { list-style: none; padding: 0; }
-.tpc-manual__attrs li { padding-left: 0; }
+.tpc-value h3 { margin-bottom: 10px; font-size: 20px; font-weight: 800; color: var(--tpc-navy); }
+.tpc-value p { margin: 0; font-size: 16px; line-height: 1.75; color: var(--tpc-text); }
+.tpc-manual__attrs { list-style: none; margin: 0; padding: 0; }
+.tpc-manual__attrs li + li { margin-top: 10px; }
 .tpc-manual__attrs b { color: var(--tpc-navy); }
-.tpc-manual__source { margin: 36px 0 0; font-size: 13px; color: var(--tpc-muted); }
+.tpc-logo-panel {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    min-width: 0;
+    padding: 32px 36px;
+    background: var(--tpc-tint);
+    border: 1px solid var(--tpc-line);
+    border-radius: 16px;
+}
+.tpc-logo-panel__copy { flex: 1; min-width: 0; }
+.tpc-logo-panel .tpc-eyebrow { margin-bottom: 10px; }
+.tpc-logo-panel .tpc-title { font-size: 26px; margin-bottom: 12px; }
+.tpc-logo-panel .tpc-lead { font-size: 15.5px; line-height: 1.7; overflow-wrap: break-word; }
+.tpc-logo-panel .tpc-lead + .tpc-lead { margin-top: 12px; }
+.tpc-college-logo {
+    flex: 0 0 156px;
+    width: 156px;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 8px #fff, 0 10px 28px rgba(0, 42, 74, .12);
+}
+@media (max-width: 1199.98px) {
+    .tpc-logo-panel { flex-direction: column; align-items: center; padding: 28px 28px 32px; }
+    .tpc-logo-panel__copy { width: 100%; }
+}
+@media (max-width: 575.98px) {
+    .tpc-logo-panel { padding: 24px 20px 28px; }
+}
 
 /* ---------- Schools ---------- */
 .tpc-school { height: 100%; padding: 32px 30px; position: relative; overflow: hidden; }
