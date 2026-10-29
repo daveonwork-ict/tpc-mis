@@ -22,14 +22,6 @@
         };
     };
 
-    $statementIcon = function ($title) {
-        $t = strtolower($title);
-        return match (true) {
-            str_contains($t, 'mission') => 'fa-bullseye',
-            str_contains($t, 'vision') => 'fa-eye',
-            default => 'fa-landmark',
-        };
-    };
 @endphp
 
 @section('main')
@@ -64,24 +56,89 @@
                 <div class="col-lg-7">
                     <div class="tpc-about__body">
                         <span class="tpc-eyebrow">{{ ___('frontend.about_the_college') }}</span>
-                        <h2 class="tpc-title">{{ @$sections['statement']->defaultTranslate->name }}</h2>
-                        <div class="tpc-statements mb-0">
-                            @foreach ($sectionData('statement') as $item)
-                                <div class="tpc-statement">
-                                    <div class="tpc-statement__icon"><i class="fas {{ $statementIcon($item['title']) }}"></i></div>
-                                    <div>
-                                        <h3>{{ $item['title'] }}</h3>
-                                        <p>{{ $item['description'] }}</p>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
+                        <h2 class="tpc-title">About Tarlac Provincial College</h2>
+                        <p class="tpc-lead">The Province of Tarlac protects and promotes the right of its people to quality education at all levels, and makes that education accessible through a system that meets local and sectoral needs.</p>
+                        <p class="tpc-lead mb-0">Education is one of the province’s five pillars of good governance, together with job generation, healthcare, agriculture and food security, and environmental protection. Under the banner “Edukasyon muna, Tao muna,” the provincial administration treats accessible, equal, and quality education as the way to prepare Tarlaqueños for work and to support the growth of the province.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- STATEMENT::END -->
+
+    <section class="tpc-section tpc-section--tint">
+        <div class="container">
+            <div class="tpc-manual">
+                <article class="tpc-manual__block">
+                    <h2>Vision</h2>
+                    <p>Tarlac Provincial College is the center of educational opportunities for Tarlaqueños.</p>
+                </article>
+                <article class="tpc-manual__block">
+                    <h2>Mission</h2>
+                    <ol>
+                        <li>Produce competent, committed, and compassionate graduates through quality, accessible, and inclusive education.</li>
+                        <li>Build pathways to translate education into meaningful employment and contribution to society.</li>
+                        <li>Partner with communities for the advancement of local development and global engagement.</li>
+                    </ol>
+                </article>
+                <article class="tpc-manual__block">
+                    <h2>Goals</h2>
+                    <ol>
+                        <li>Produce graduates with strong disciplinary foundations, employability, local-rootedness, and a sense of service, aligned with global standards.</li>
+                        <li>Provide opportunities that meet the needs of the people and respond to their changing social and economic conditions.</li>
+                        <li>Sustain the College through good governance and continuous quality assurance in academic and administrative systems.</li>
+                    </ol>
+                </article>
+            </div>
+            <h2 class="tpc-title tpc-title--sm">Core values</h2>
+            <p class="tpc-lead">Truth. Progress. Compassion. These values shape the intellect and the character of learners and guide decisions, relationships, and the culture of the College.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="tpc-card tpc-value">
+                        <h3>Truth</h3>
+                        <p>The College upholds integrity, transparency, and accountability in academic and administrative work. It fosters honesty, ethical leadership, and decisions based on evidence.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="tpc-card tpc-value">
+                        <h3>Progress</h3>
+                        <p>The College champions innovation, continuous improvement, and excellence. It welcomes change and looks for practical answers to new educational, technological, and social needs.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="tpc-card tpc-value">
+                        <h3>Compassion</h3>
+                        <p>The College nurtures empathy, inclusivity, and service. It puts the welfare of students and communities first, and keeps education accessible, humane, and open to those who are marginalized.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tpc-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <span class="tpc-eyebrow">What a TPC graduate carries</span>
+                    <h2 class="tpc-title tpc-title--sm">Graduate attributes</h2>
+                    <ol class="tpc-manual__attrs">
+                        <li><b>Competence.</b> Critical thinking, technical skill, and evidence-based practice for the needs of Tarlac communities, while remaining globally competitive.</li>
+                        <li><b>Social responsibility.</b> Cultural sensitivity and ethical responsibility for sustainable, inclusive, and people-centered development, aligned with the Tarlac Provincial Development Framework.</li>
+                        <li><b>Lifelong learning.</b> Research, innovation, and digital literacy used to keep learning and to add to knowledge.</li>
+                        <li><b>Resiliency.</b> Flexibility, perseverance, and professionalism in changing conditions.</li>
+                        <li><b>Collaboration.</b> Partnerships with people, communities, and organizations, locally and globally, toward shared goals.</li>
+                    </ol>
+                </div>
+                <div class="col-lg-6">
+                    <span class="tpc-eyebrow">College logo</span>
+                    <h2 class="tpc-title tpc-title--sm">Collaboration, growth, and service</h2>
+                    <p class="tpc-lead">The logo stands for collaboration, growth, and service in accessible, quality higher education. Its circle means wholeness, continuity, and a lasting commitment to lifelong learning and community development. The shield at the center means protection, tradition, excellence, and institutional strength.</p>
+                    <p class="tpc-lead mb-0">The double blue ring means unity and permanence. “Tarlac Provincial College” and “Provincial Government of Tarlac” are written on the upper and lower arcs, tying the College to the provincial government.</p>
+                </div>
+            </div>
+            <p class="tpc-manual__source">From the 2026 Tarlac Provincial College Student Manual, About the College, pages 1 to 4.</p>
+        </div>
+    </section>
 
     <!-- CHARTER::START -->
     @if ($data['abouts']->count())

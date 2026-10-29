@@ -424,6 +424,25 @@ a.tpc-card:hover, .tpc-card:hover {
 .tpc-statement h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
 .tpc-statement p { font-size: 15.5px; line-height: 1.7; margin: 0; color: var(--tpc-text); }
 
+.tpc-manual { display: grid; gap: 28px; margin-bottom: 48px; }
+.tpc-manual__block h2,
+.tpc-value h3 { color: var(--tpc-navy); font-weight: 800; }
+.tpc-manual__block h2 { font-size: 28px; margin-bottom: 12px; }
+.tpc-manual__block p,
+.tpc-manual__block li,
+.tpc-value p { font-size: 16px; line-height: 1.75; color: var(--tpc-text); }
+.tpc-manual__block ol,
+.tpc-manual__attrs { margin: 0; padding-left: 1.25rem; }
+.tpc-manual__block li + li,
+.tpc-manual__attrs li + li { margin-top: 10px; }
+.tpc-value { height: 100%; padding: 28px 26px; }
+.tpc-value h3 { font-size: 20px; margin-bottom: 10px; }
+.tpc-value p { margin: 0; }
+.tpc-manual__attrs { list-style: none; padding: 0; }
+.tpc-manual__attrs li { padding-left: 0; }
+.tpc-manual__attrs b { color: var(--tpc-navy); }
+.tpc-manual__source { margin: 36px 0 0; font-size: 13px; color: var(--tpc-muted); }
+
 /* ---------- Schools ---------- */
 .tpc-school { height: 100%; padding: 32px 30px; position: relative; overflow: hidden; }
 .tpc-school::after {
